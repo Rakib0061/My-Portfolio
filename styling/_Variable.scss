@@ -1,0 +1,33 @@
+// color
+$bg1 : #000f17;
+$bg2 : #002531;
+$bg3 : #819098;
+$prim_color : #ee7a12;
+$secendary_color : #999;
+$discord : #5562ea;
+$insta : linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+$telegram : #27a3e2;
+$fb : #27a3e2;
+$l-din: #0077b5;
+
+// font size
+$nav_logo_font : 35px;
+$nav_item_font : 21px;
+$title_font : 90px;
+$subtitle_font : 22px;
+$h1_font : 60px;
+$h1p_font : 19px;
+$h2_font : 35px;
+$h2p_font : 19px;
+$button_font : 31px;
+$board_font : 40px;
+
+// mixin 
+@mixin title($font:$h1font,$l-height:72px){
+    font-family: 'bon_foyage_demo';
+    color: $secendary_color;
+    font-size: $font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $l-height;
+}
