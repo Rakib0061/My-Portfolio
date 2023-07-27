@@ -1,33 +1,81 @@
 // color
-$bg1 : #000f17;
-$bg2 : #002531;
-$bg3 : #819098;
-$prim_color : #ee7a12;
-$secendary_color : #999;
-$discord : #5562ea;
-$insta : linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
-$telegram : #27a3e2;
-$fb : #27a3e2;
+$bg1: #000f17;
+$bg2: #002531;
+$bg3: #819098;
+$prim_color: #ee7a12;
+$secendary_color: #999;
+$discord: #5562ea;
+$insta: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+$telegram: #27a3e2;
+$fb: #27a3e2;
 $l-din: #0077b5;
+$html: #e5532d;
+$css: #2899f3;
+$js: #ffe008;
+$sass: #ce6b9c;
 
 // font size
-$nav_logo_font : 35px;
-$nav_item_font : 21px;
-$title_font : 90px;
-$subtitle_font : 22px;
-$h1_font : 60px;
-$h1p_font : 19px;
-$h2_font : 35px;
-$h2p_font : 19px;
-$button_font : 31px;
-$board_font : 40px;
+$nav_logo_font: 35px;
+$nav_item_font: 21px;
+$title_font: 90px;
+$subtitle_font: 22px;
+$h1_font: 60px;
+$h1p_font: 19px;
+$h2_font: 35px;
+$h2p_font: 19px;
+$button_font: 26px;
+$board_font: 40px;
 
-// mixin 
-@mixin title($font:$h1font,$l-height:72px){
-    font-family: 'bon_foyage_demo';
-    color: $secendary_color;
-    font-size: $font;
-    font-style: normal;
-    font-weight: 400;
-    line-height: $l-height;
+// family
+$prime-fam: "bon_foyage_demo";
+$branch-fam: "Cabin", sans-serif;
+
+// mixin
+@mixin title($family: $prime-fam, $font: $h1_font, $l-height: 72px) {
+  font-family: $family;
+  color: #fff;
+  font-size: $font;
+  font-style: normal;
+  font-weight: 400;
+  line-height: $l-height;
+  margin-bottom: 0;
+}
+
+@mixin button() {
+  font-family: $branch-fam;
+  border: none;
+  background-color: $prim_color;
+  text-decoration: none;
+  padding: 16px 70px;
+  font-size: $button_font;
+  color: #fff;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+@mixin icon(
+  $top: inherit,
+  $lft: inherit,
+  $rit: inherit,
+  $btm: inherit,
+  $icon_bg: $bg1,
+  $icon_clr: #fff
+) {
+  position: absolute;
+  z-index: 1;
+  top: $top;
+  left: $lft;
+  right: $rit;
+  bottom: $btm;
+  background: $icon_bg;
+  color: $icon_clr;
+  @if $icon_clr == $html {
+    border: 2px solid $html;
+  } @else if $icon_clr == $css {
+    border: 2px solid $css;
+  } @else if $icon_clr == $js {
+    border: 2px solid $js;
+  } @else if $icon_clr == $sass {
+    border: 2px solid $sass;
+  }
 }

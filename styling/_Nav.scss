@@ -1,9 +1,14 @@
 @import "./Variable";
 
 nav {
-    a {
+    padding: 39px 0!important;
+    background: $bg1;
+
+    .navbar-brand {
+        margin: 0 !important;
         h1 {
             @include title($font:$nav_logo_font,$l-height:35px);
+            color: $secendary_color;
             span {
                 color: $prim_color;
             }
@@ -15,7 +20,8 @@ nav {
             padding: 0 50px;
 
             .nav-link {
-                @include title($font:$nav_item_font,$l-height:31px);
+                @include title($family:$branch-fam,$font:$nav_item_font,$l-height:31px);
+                color: $secendary_color;
 
                 &:hover {
                     font-weight: 600;
@@ -24,71 +30,7 @@ nav {
         }
     }
 
-    .social_media {
-        position: relative;
-        width: 44px;
-        height: 47px;
-
-        ul {
-            position: absolute;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            background: $secendary_color;
-            width: 44px;
-            height: 238px;
-
-            li {
-                list-style: none;
-                flex-direction: row;
-                display: flex;
-
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                    transition: all 0.4s ease-in-out;
-
-                    i {
-                        font-size: 20px;
-                        width: 30px;
-                        height: 30px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: transparent;
-                        border-radius: 100%;
-                    }
-
-                    &:hover .fa-discord {
-                        color: $discord;
-                        background-color: #fff;
-                    }
-
-                    &:hover .fa-instagram{
-                        color: #fff;
-                        background: $insta;
-                    }
-
-                    &:hover .fa-telegram-plane {
-                        color: #fff;
-                        background-color: $telegram;
-                    }
-
-                    &:hover .fa-facebook-f {
-                        color: #fff;
-                        background-color: $fb;
-                    }
-
-                    &:hover .fa-linkedin-in {
-                        color: #fff;
-                        background-color: $l-din;
-                    }
-                    
-                }
-            }
-        }
+    button {
+        @include button();
     }
 }
