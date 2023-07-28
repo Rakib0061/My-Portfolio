@@ -24,6 +24,7 @@ $h1p_font: 19px;
 $h2_font: 35px;
 $h2p_font: 19px;
 $button_font: 26px;
+$button_font_sm: 22px;
 $board_font: 40px;
 
 // family
@@ -41,16 +42,15 @@ $branch-fam: "Cabin", sans-serif;
   margin-bottom: 0;
 }
 
-@mixin button() {
+@mixin button($font:$button_font,$l_height:39px,$pad:16px 70px) {
   font-family: $branch-fam;
   border: none;
   background-color: $prim_color;
-  text-decoration: none;
-  padding: 16px 70px;
-  font-size: $button_font;
+  padding: $pad;
+  font-size: $font;
   color: #fff;
   font-weight: 700;
-  line-height: 39px;
+  line-height: $l_height;
 }
 
 @mixin icon(

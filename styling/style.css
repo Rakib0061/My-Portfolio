@@ -39,7 +39,6 @@ nav button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
-  text-decoration: none;
   padding: 16px 70px;
   font-size: 26px;
   color: #fff;
@@ -50,7 +49,7 @@ nav button {
 .Home {
   position: relative;
   background: #000f17;
-  padding: 130px 0 10%;
+  padding: 130px 0 0;
 }
 .Home .social_media {
   position: absolute;
@@ -123,12 +122,16 @@ nav button {
   color: #fff;
   background-color: #0077b5;
 }
-.Home .left_article figure {
+.Home article {
+  position: relative;
+  padding: 0 0 10%;
+}
+.Home article .left_article figure {
   display: inline-block;
   position: relative;
   margin-bottom: 0;
 }
-.Home .left_article figure > img {
+.Home article .left_article figure > img {
   position: absolute;
   top: 2%;
   left: 51%;
@@ -136,7 +139,7 @@ nav button {
   height: 75%;
   transform: translateX(-50%);
 }
-.Home .left_article figure .banner_img img {
+.Home article .left_article figure .banner_img img {
   background: url(<path-to-image>), lightgray -88.561px -36.814px/209.086% 105.853% no-repeat;
   mix-blend-mode: luminosity;
   width: 477px;
@@ -144,7 +147,7 @@ nav button {
   position: relative;
   z-index: 1;
 }
-.Home .left_article figure .icon i {
+.Home article .left_article figure .icon i {
   width: 45px;
   height: 45px;
   font-size: 43px;
@@ -152,7 +155,7 @@ nav button {
   justify-content: center;
   align-items: center;
 }
-.Home .left_article figure .icon i:nth-child(1) {
+.Home article .left_article figure .icon i:nth-child(1) {
   position: absolute;
   z-index: 1;
   top: 30%;
@@ -163,7 +166,7 @@ nav button {
   color: #e5532d;
   border: 2px solid #e5532d;
 }
-.Home .left_article figure .icon i:nth-child(2) {
+.Home article .left_article figure .icon i:nth-child(2) {
   position: absolute;
   z-index: 1;
   top: -10%;
@@ -174,7 +177,7 @@ nav button {
   color: #2899f3;
   border: 2px solid #2899f3;
 }
-.Home .left_article figure .icon i:nth-child(3) {
+.Home article .left_article figure .icon i:nth-child(3) {
   position: absolute;
   z-index: 1;
   top: -10%;
@@ -185,7 +188,7 @@ nav button {
   color: #ffe008;
   border: 2px solid #ffe008;
 }
-.Home .left_article figure .icon i:nth-child(4) {
+.Home article .left_article figure .icon i:nth-child(4) {
   position: absolute;
   z-index: 1;
   top: 7%;
@@ -198,7 +201,7 @@ nav button {
   transform: rotate(23deg);
   font-size: 30px;
 }
-.Home .left_article figure .icon img:nth-child(5) {
+.Home article .left_article figure .icon img:nth-child(5) {
   position: absolute;
   top: 20%;
   right: -5%;
@@ -206,7 +209,7 @@ nav button {
   height: 45px;
   z-index: 1;
 }
-.Home .left_article figure .icon img:nth-child(6) {
+.Home article .left_article figure .icon img:nth-child(6) {
   position: absolute;
   top: 7%;
   left: 10%;
@@ -215,7 +218,7 @@ nav button {
   transform: rotate(340deg);
   z-index: 1;
 }
-.Home .left_article figure .icon img:nth-child(7) {
+.Home article .left_article figure .icon img:nth-child(7) {
   position: absolute;
   top: -15%;
   right: 15%;
@@ -224,7 +227,7 @@ nav button {
   transform: rotate(1deg);
   z-index: 0;
 }
-.Home .left_article figure .icon img:nth-child(8) {
+.Home article .left_article figure .icon img:nth-child(8) {
   position: absolute;
   bottom: -5%;
   right: -8%;
@@ -232,7 +235,7 @@ nav button {
   height: 144px;
   z-index: 0;
 }
-.Home .left_article figure .icon img:nth-child(9) {
+.Home article .left_article figure .icon img:nth-child(9) {
   position: absolute;
   top: 50%;
   right: -23%;
@@ -241,11 +244,11 @@ nav button {
   height: 144px;
   z-index: 0;
 }
-.Home .right_article header {
+.Home article .right_article header {
   position: relative;
   margin-bottom: 32px;
 }
-.Home .right_article header h1 {
+.Home article .right_article header h1 {
   font-family: "bon_foyage_demo";
   color: #fff;
   font-size: 90px;
@@ -254,7 +257,7 @@ nav button {
   line-height: 126px;
   margin-bottom: 0;
 }
-.Home .right_article header img:nth-child(2) {
+.Home article .right_article header img:nth-child(2) {
   position: absolute;
   width: 10px;
   height: 200px;
@@ -263,14 +266,14 @@ nav button {
   bottom: 10%;
   left: 0;
 }
-.Home .right_article header img:nth-child(3) {
+.Home article .right_article header img:nth-child(3) {
   position: absolute;
   width: 95.705px;
   height: 93px;
   right: -11%;
   top: 10%;
 }
-.Home .right_article figure p {
+.Home article .right_article figure p {
   font-family: "Cabin", sans-serif;
   color: #fff;
   font-size: 22px;
@@ -281,11 +284,10 @@ nav button {
   color: #999;
   margin-bottom: 36px;
 }
-.Home .right_article figure button {
+.Home article .right_article figure button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
-  text-decoration: none;
   padding: 16px 70px;
   font-size: 26px;
   color: #fff;
@@ -295,9 +297,10 @@ nav button {
 .Home .dashboard {
   position: absolute;
   bottom: 0%;
-  transform: translateY(50%);
-  background: #002531;
-  width: 1320px;
+  left: 0;
+  transform: translateY(45%);
+  background: #819098;
+  width: 100%;
   height: 220px;
   display: flex;
   align-items: center;
@@ -330,4 +333,119 @@ nav button {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+}
+
+.About {
+  background: #002531;
+  padding-top: 10%;
+}
+.About .left_article header h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+.About .left_article figure {
+  margin-bottom: 0;
+}
+.About .left_article figure p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  margin-bottom: 20px;
+  padding-right: 23%;
+}
+.About .left_article figure button {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 12px 55px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 33px;
+}
+.About .right_article .area {
+  position: relative;
+}
+.About .right_article .area::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 75%;
+  background-color: #ee7a12;
+}
+.About .right_article .area .web {
+  position: relative;
+}
+.About .right_article .area .web::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ee7a12;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.About .right_article .area .web:nth-child(even)::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #ee7a12;
+  border-left: 3px solid #ee7a12;
+  top: 50%;
+  left: -8%;
+  transform: rotate(324deg) translateY(-50%);
+}
+.About .right_article .area .web:nth-child(even)::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  border-top: 3px solid #ee7a12;
+  border-left: 3px solid #ee7a12;
+  top: 50%;
+  left: -9%;
+  border-radius: 3px;
+}
+.About .right_article .area .web:nth-child(even) figure {
+  background-color: #819098;
+}
+.About .right_article .area .web figure {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  background-color: #ee7a12;
+  width: 65%;
+  height: 90px;
+  margin-bottom: 32px;
+}
+.About .right_article .area .web figure img {
+  width: 40px;
+  height: 40px;
+  margin: 0 50px;
+}
+.About .right_article .area .web figure h2 {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
