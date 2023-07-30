@@ -1,0 +1,97 @@
+@import "./Variable";
+
+.Service2 {
+    background: $bg1;
+    position: relative;
+
+    & > img {
+        @include wave($lft:-1%,$tp:50%,$rot:90deg,$x:0,$y:-50%,$tp_child:50.5%,$lft_child:-1%);
+    }
+
+    header {
+        padding-top: 6%;
+        text-align: center;
+        h1 {
+            @include title($font:$h1_font_xl);
+        }
+        P {
+            @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
+            color: $secendary_color;
+            padding: 0 28%;
+            margin-bottom: 7%;
+        }
+    }
+
+    figure {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 7%;
+            left: 50%;
+            transform: translate(-50%, -7%);
+            width: 2px;
+            height: 70%;
+            background: $dotted_line;
+        }
+
+        .figure_left {
+            text-align: end;
+            
+            .experience {
+                padding-right: 18%;
+                position: relative;
+                height: 200px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100%;
+                    border: 4px dashed $secendary_color;
+                    top: 0%;
+                    right: 0;
+                    transform: translate(50%, 0%);
+                    background: $org_circle;
+                }
+
+                h2 {
+                    @include title($family:$branch-fam,$font:$h2_font,$l-height:52px);
+                    margin-bottom: 8px;
+                }
+                p {
+                    @include title($family:$branch-fam,$font:$h2p_font,$l-height:22px);
+                    color: $secendary_color;
+                }
+            }
+        } 
+        .figure_right {
+            text-align: start;
+            
+            .experience {
+                padding-left: 18%;
+                padding-right: 0;
+                position: relative;
+
+                p {
+                   padding: 0 40% 0 0px;
+                }
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+
+            }
+        }
+    }
+}

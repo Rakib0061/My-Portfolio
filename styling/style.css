@@ -20,7 +20,7 @@ nav .navbar-brand h1 span {
   color: #ee7a12;
 }
 nav .navbar-nav .nav-item {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 nav .navbar-nav .nav-item .nav-link {
   font-family: "Cabin", sans-serif;
@@ -31,25 +31,52 @@ nav .navbar-nav .nav-item .nav-link {
   line-height: 31px;
   margin-bottom: 0;
   color: #999;
+  transition: all 0.2s ease-in-out;
+}
+nav .navbar-nav .nav-item .nav-link::before {
+  display: block;
+  content: attr(title);
+  font-weight: 600;
+  font-size: 24px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 nav .navbar-nav .nav-item .nav-link:hover {
   font-weight: 600;
+  font-size: 24px;
+}
+nav .navbar-nav .nav-item .nav-link.active,
+nav .navbar-nav .nav-item .navbar-nav .nav-link.show {
+  color: #ee7a12;
 }
 nav button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
-  padding: 16px 70px;
+  padding: 10px 35px;
   font-size: 26px;
   color: #fff;
   font-weight: 700;
   line-height: 39px;
 }
 
+.sticky {
+  position: fixed !important;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  top: 0;
+  background-color: #000f17;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
 .Home {
   position: relative;
   background: #000f17;
   padding: 130px 0 0;
+  z-index: 2;
 }
 .Home .social_media {
   position: absolute;
@@ -108,7 +135,7 @@ nav button {
 }
 .Home .social_media ul li a:hover .fa-instagram {
   color: #fff;
-  background: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+  background: linear-gradient(to bottom, #aa2fb5 0%, #ee7a12 93%);
 }
 .Home .social_media ul li a:hover .fa-telegram-plane {
   color: #fff;
@@ -288,7 +315,7 @@ nav button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
-  padding: 16px 70px;
+  padding: 10px 35px;
   font-size: 26px;
   color: #fff;
   font-weight: 700;
@@ -296,6 +323,7 @@ nav button {
 }
 .Home .dashboard {
   position: absolute;
+  z-index: 1;
   bottom: 0%;
   left: 0;
   transform: translateY(45%);
@@ -335,11 +363,29 @@ nav button {
   line-height: 48px;
 }
 
-.About {
+.Service {
   background: #002531;
-  padding-top: 10%;
+  padding: 10% 0 5%;
+  position: relative;
 }
-.About .left_article header h1 {
+.Service > img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  bottom: inherit;
+  left: inherit;
+  width: 7px;
+  height: 154px;
+  transform: translate(0%, 0%) rotate(0deg);
+  transform-origin: 0 0;
+}
+.Service > img:nth-child(2) {
+  top: -10%;
+  right: 10.2%;
+  bottom: inherit;
+  left: inherit;
+}
+.Service .left_article header h1 {
   font-family: "bon_foyage_demo";
   color: #fff;
   font-size: 60px;
@@ -349,13 +395,13 @@ nav button {
   margin-bottom: 0;
   margin-bottom: 5px;
 }
-.About .left_article figure {
+.Service .left_article figure {
   margin-bottom: 0;
 }
-.About .left_article figure p {
+.Service .left_article figure p {
   font-family: "Cabin", sans-serif;
   color: #fff;
-  font-size: 19px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -364,7 +410,7 @@ nav button {
   margin-bottom: 20px;
   padding-right: 23%;
 }
-.About .left_article figure button {
+.Service .left_article figure button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
@@ -374,10 +420,10 @@ nav button {
   font-weight: 700;
   line-height: 33px;
 }
-.About .right_article .area {
+.Service .right_article .area {
   position: relative;
 }
-.About .right_article .area::before {
+.Service .right_article .area::before {
   position: absolute;
   content: "";
   left: 0;
@@ -387,10 +433,10 @@ nav button {
   height: 75%;
   background-color: #ee7a12;
 }
-.About .right_article .area .web {
+.Service .right_article .area .web {
   position: relative;
 }
-.About .right_article .area .web::before {
+.Service .right_article .area .web::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -400,7 +446,7 @@ nav button {
   left: 0;
   transform: translateY(-50%);
 }
-.About .right_article .area .web:nth-child(even)::after {
+.Service .right_article .area .web:nth-child(even)::after {
   position: absolute;
   content: "";
   width: 16px;
@@ -411,7 +457,7 @@ nav button {
   left: -8%;
   transform: rotate(324deg) translateY(-50%);
 }
-.About .right_article .area .web:nth-child(even)::before {
+.Service .right_article .area .web:nth-child(even)::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -422,10 +468,10 @@ nav button {
   left: -9%;
   border-radius: 3px;
 }
-.About .right_article .area .web:nth-child(even) figure {
+.Service .right_article .area .web:nth-child(even) figure {
   background-color: #819098;
 }
-.About .right_article .area .web figure {
+.Service .right_article .area .web figure {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -436,16 +482,137 @@ nav button {
   height: 90px;
   margin-bottom: 32px;
 }
-.About .right_article .area .web figure img {
+.Service .right_article .area .web figure img {
   width: 40px;
   height: 40px;
   margin: 0 50px;
 }
-.About .right_article .area .web figure h2 {
+.Service .right_article .area .web figure h2 {
   margin-bottom: 0;
   color: #fff;
   font-family: "Cabin", sans-serif;
   font-size: 40px;
   line-height: 40px;
   font-weight: 500;
+}
+
+.Service2 {
+  background: #000f17;
+  position: relative;
+}
+.Service2 > img {
+  position: absolute;
+  top: 50%;
+  right: inherit;
+  bottom: inherit;
+  left: -1%;
+  width: 7px;
+  height: 154px;
+  transform: translate(0, -50%) rotate(90deg);
+  transform-origin: 100% 100%;
+}
+.Service2 > img:nth-child(2) {
+  top: 50.5%;
+  right: inherit;
+  bottom: inherit;
+  left: -1%;
+}
+.Service2 header {
+  padding-top: 6%;
+  text-align: center;
+}
+.Service2 header h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 0;
+}
+.Service2 header P {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  padding: 0 28%;
+  margin-bottom: 7%;
+}
+.Service2 figure {
+  position: relative;
+}
+.Service2 figure::before {
+  content: "";
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -7%);
+  width: 2px;
+  height: 70%;
+  background: repeating-linear-gradient(#999, #999 15px, transparent 15px, transparent 25px);
+}
+.Service2 figure .figure_left {
+  text-align: end;
+}
+.Service2 figure .figure_left .experience {
+  padding-right: 18%;
+  position: relative;
+  height: 200px;
+}
+.Service2 figure .figure_left .experience::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 4px dashed #999;
+  top: 0%;
+  right: 0;
+  transform: translate(50%, 0%);
+  background: radial-gradient(#999 0%, #999 40%, transparent 42%, transparent 100%);
+}
+.Service2 figure .figure_left .experience h2 {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  margin-bottom: 0;
+  margin-bottom: 8px;
+}
+.Service2 figure .figure_left .experience p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #999;
+}
+.Service2 figure .figure_right {
+  text-align: start;
+}
+.Service2 figure .figure_right .experience {
+  padding-left: 18%;
+  padding-right: 0;
+  position: relative;
+}
+.Service2 figure .figure_right .experience p {
+  padding: 0 40% 0 0px;
+}
+.Service2 figure .figure_right .experience::before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.Service2 figure .figure_right .experience::after {
+  content: "";
+  position: absolute;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

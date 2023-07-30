@@ -4,6 +4,7 @@
     position: relative;
     background: $bg1;
     padding: 130px 0 0;
+    z-index: 2;
 
     .social_media {
         position: absolute;
@@ -197,7 +198,6 @@
     
                 h1 {
                     @include title($font:$title_font,$l-height:126px);
-                    // padding-right: 10%;
                 }
                 img {
                     &:nth-child(2){
@@ -233,6 +233,7 @@
     }
     .dashboard {
         position: absolute;
+        z-index: 1;
         bottom: 0%;
         left: 0;
         transform: translateY(45%);

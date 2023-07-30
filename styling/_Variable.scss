@@ -5,7 +5,19 @@ $bg3: #819098;
 $prim_color: #ee7a12;
 $secendary_color: #999;
 $discord: #5562ea;
-$insta: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+$insta: linear-gradient(to bottom, #aa2fb5 0%, $prim_color 93%);
+$org_circle: radial-gradient(
+  $secendary_color 0%,
+  $secendary_color 40%,
+  transparent 42%,
+  transparent 100%
+);
+$dotted_line: repeating-linear-gradient(
+  $secendary_color,
+  $secendary_color 15px,
+  transparent 15px,
+  transparent 25px
+);
 $telegram: #27a3e2;
 $fb: #27a3e2;
 $l-din: #0077b5;
@@ -20,9 +32,10 @@ $nav_item_font: 21px;
 $title_font: 90px;
 $subtitle_font: 22px;
 $h1_font: 60px;
+$h1_font_xl: 70px;
 $h1p_font: 19px;
 $h2_font: 35px;
-$h2p_font: 19px;
+$h2p_font: 15px;
 $button_font: 26px;
 $button_font_sm: 22px;
 $board_font: 40px;
@@ -42,7 +55,7 @@ $branch-fam: "Cabin", sans-serif;
   margin-bottom: 0;
 }
 
-@mixin button($font:$button_font,$l_height:39px,$pad:16px 70px) {
+@mixin button($font: $button_font, $l_height: 39px, $pad: 10px 35px) {
   font-family: $branch-fam;
   border: none;
   background-color: $prim_color;
@@ -53,14 +66,7 @@ $branch-fam: "Cabin", sans-serif;
   line-height: $l_height;
 }
 
-@mixin icon(
-  $top: inherit,
-  $lft: inherit,
-  $rit: inherit,
-  $btm: inherit,
-  $icon_bg: $bg1,
-  $icon_clr: #fff
-) {
+@mixin icon ($top: inherit,$lft: inherit,$rit: inherit,$btm: inherit,$icon_bg: $bg1,$icon_clr: #fff) {
   position: absolute;
   z-index: 1;
   top: $top;
@@ -77,5 +83,24 @@ $branch-fam: "Cabin", sans-serif;
     border: 2px solid $js;
   } @else if $icon_clr == $sass {
     border: 2px solid $sass;
+  }
+}
+
+@mixin wave ($tp:inherit,$rit:inherit,$lft:inherit,$btom:inherit,$rot:1deg,$x:0,$y:0,$tp_child:inherit,$rit_child:inherit,$lft_child:inherit,$btom_child:inherit,$x1:100%,$y1:100%){
+  position: absolute;
+  top: $tp;
+  right: $rit;
+  bottom: $btom;
+  left: $lft;
+  width: 7px;
+  height: 154px;
+  transform: translate($x,$y) rotate($rot);
+  transform-origin: $x1 $y1;
+  
+   &:nth-child(2) {
+    top: $tp_child;
+    right: $rit_child;
+    bottom: $btom_child;
+    left: $lft_child;
   }
 }

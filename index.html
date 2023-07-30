@@ -24,16 +24,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                <a class="nav-link active" title="Home" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#About">About</a>
+                <a class="nav-link" title="About" href="#About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Blog">Blog</a>
+                <a class="nav-link" title="Service" href="#Service">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
+                <a class="nav-link" title="Portfolio" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Contact" href="#Contact">Contact</a>
               </li>
             </ul>
             <button>
@@ -44,9 +47,10 @@
     </nav>
     <!--################ NAVBAR ################-->
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0">
+
     <!--################ HEADER ################-->
-    <main class="Home" id="Home">
+    <section id="Home" class="Home">
       <div class="social_media">
         <p>Follow Me</p>
         <ul>
@@ -131,11 +135,13 @@
           </div>
         </div>
       </article>
-    </main>
+    </section>
     <!--################ HEADER ################-->
 
-    <!--################ ABOUT ################-->
-    <main class="About" id="About">
+    <!--################ SERVICE ################-->
+    <section id="Service" class="Service">
+      <img src="./photos/weave.png" alt="wave">
+      <img src="./photos/weave.png" alt="wave">
       <article class="container">
         <div class="row">
           <div class="col-xxl-5 col-xl-5">
@@ -172,15 +178,71 @@
                 </div>
               </div>
               </div>
-            </div>
           </div>
         </div>
       </article>
-    </main>
+    </section>
+    <!--################ SERVICE ################-->
+
+    <!--################ SERVICE2 ################-->
+    <section class="Service2">
+      <img src="./photos/weave.png" alt="wave">
+      <img src="./photos/weave.png" alt="wave">
+      
+      <article class="container">
+        <header>
+          <h1>My Work Experience</h1>
+          <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </header>
+        <figure>
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 p-0">
+                <div class="figure_left">
+                  <div class="experience">
+                    <h2>Lorem It</h2>
+                    <p>feb 2021 -still</p>
+                  </div>
+                  <div class="experience">
+                    <h2>Lorem.dt</h2>
+                    <p>jan 2020 -dec 2021</p>
+                  </div>
+                  <div class="experience">
+                    <h2>Lorem.org</h2>
+                    <p>feb 2018 -jun2020</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 p-0">
+              <div class="figure_left figure_right">
+                <div class="experience">
+                  <h2>Lorem Product Designer</h2>
+                  <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do amet sint. Velit officia consequat duiomis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="experience">
+                  <h2>Frontend Developer</h2>
+                  <p>Amet minim mollit non deserunt ullamco est siitnt duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="experience">
+                  <h2>HTML Developer</h2>
+                  <p>Amet minim mollit non deserunt ullamco est n veniam consequat sunt nostrud amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </article>
+    </section>
+    <!--################ SERVICE2 ################-->
+
+    <!--################ ABOUT ################-->
+    
     <!--################ ABOUT ################-->
 
 
-    </div>
+    </main>
+
+
+    
 
 
 
