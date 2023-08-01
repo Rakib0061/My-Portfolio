@@ -36,6 +36,7 @@
 
             button {
                 @include button($button_font_sm,33px, 12px 55px);
+                @include btn_animation();
             }
         }
     }

@@ -322,6 +322,23 @@ nav button {
   color: #fff;
   font-weight: 700;
   line-height: 39px;
+  position: relative;
+}
+.Home article .right_article figure button::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(238, 122, 18, 0.73);
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+  filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+}
+.Home article .right_article figure button:hover::before {
+  opacity: 1;
 }
 .Home .dashboard {
   position: absolute;
@@ -421,6 +438,23 @@ nav button {
   color: #fff;
   font-weight: 700;
   line-height: 33px;
+  position: relative;
+}
+.Service .left_article figure button::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(238, 122, 18, 0.73);
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+  filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+}
+.Service .left_article figure button:hover::before {
+  opacity: 1;
 }
 .Service .right_article .area {
   position: relative;
@@ -683,7 +717,7 @@ nav button {
   z-index: -1;
   filter: contrast(5.5);
 }
-.Portfolio header button {
+.Portfolio header .githubLink {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
@@ -694,31 +728,31 @@ nav button {
   line-height: 34px;
   background-color: transparent;
 }
-.Portfolio header button a {
+.Portfolio header .githubLink a {
   text-decoration: none;
   color: #002531;
 }
-.Portfolio header button a span {
+.Portfolio header .githubLink a span {
   color: #ee7a12;
 }
-.Portfolio header button i {
+.Portfolio header .githubLink i {
   color: #ee7a12;
 }
 .Portfolio figure .firgure_up {
   padding-bottom: 24px;
 }
-.Portfolio figure .firgure_up a {
+.Portfolio figure .firgure_up .overlay {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-.Portfolio figure .firgure_up a .item {
+.Portfolio figure .firgure_up .overlay .item {
   position: relative;
 }
-.Portfolio figure .firgure_up a .item img {
+.Portfolio figure .firgure_up .overlay .item img {
   transition: all 0.2s linear;
 }
-.Portfolio figure .firgure_up a .item figure {
+.Portfolio figure .firgure_up .overlay .item figure {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -729,7 +763,7 @@ nav button {
   display: none;
   z-index: 2;
 }
-.Portfolio figure .firgure_up a .item figure h2 {
+.Portfolio figure .firgure_up .overlay .item figure h2 {
   font-family: "Cabin", sans-serif;
   color: #fff;
   font-size: 30px;
@@ -741,7 +775,7 @@ nav button {
   margin-bottom: 36px;
   font-weight: 700;
 }
-.Portfolio figure .firgure_up a .item figure button {
+.Portfolio figure .firgure_up .overlay .item figure button {
   font-family: "Cabin", sans-serif;
   border: none;
   background-color: #ee7a12;
@@ -753,7 +787,7 @@ nav button {
   background-color: transparent;
   border: 2px solid #999;
 }
-.Portfolio figure .firgure_up a::before {
+.Portfolio figure .firgure_up .overlay::before {
   display: none;
   content: "";
   position: absolute;
@@ -764,14 +798,14 @@ nav button {
   height: 100%;
   z-index: 1;
 }
-.Portfolio figure .firgure_up a:hover figure {
+.Portfolio figure .firgure_up .overlay:hover figure {
   display: block;
 }
-.Portfolio figure .firgure_up a:hover img {
+.Portfolio figure .firgure_up .overlay:hover img {
   filter: blur(5px);
   scale: 1.1;
 }
-.Portfolio figure .firgure_up a:hover::before {
+.Portfolio figure .firgure_up .overlay:hover::before {
   display: block;
 }
 
@@ -840,6 +874,23 @@ nav button {
   color: #fff;
   font-weight: 700;
   line-height: 33px;
+  position: relative;
+}
+.About .left_figure figure button::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(238, 122, 18, 0.73);
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+  filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+}
+.About .left_figure figure button:hover::before {
+  opacity: 1;
 }
 .About .right_figure figure {
   display: flex;
@@ -948,7 +999,7 @@ nav button {
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 38px;
   margin-bottom: 0;
   font-weight: 500;
   transition: all 0.2s linear;
@@ -965,9 +1016,9 @@ nav button {
   margin-bottom: 36px;
   padding-right: 36px;
 }
-.Blog figure .figure_title button {
+.Blog figure .figure_title .read_link {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-family: "Cabin", sans-serif;
   border: none;
@@ -979,7 +1030,8 @@ nav button {
   line-height: 30px;
   background-color: transparent;
 }
-.Blog figure .figure_title button p {
+.Blog figure .figure_title .read_link a {
+  text-decoration: none;
   transition: all 0.2s linear;
   font-family: "Cabin", sans-serif;
   color: #fff;
@@ -990,17 +1042,17 @@ nav button {
   margin-bottom: 0;
   padding-right: 15px;
 }
-.Blog figure .figure_title button i {
+.Blog figure .figure_title .read_link i {
   color: #fff;
   transition: all 0.2s linear;
 }
 .Blog figure:hover .figure_title h2 {
   color: #ee7a12;
 }
-.Blog figure:hover .figure_title button p {
+.Blog figure:hover .figure_title .read_link a {
   color: #ee7a12;
 }
-.Blog figure:hover .figure_title button i {
+.Blog figure:hover .figure_title .read_link i {
   color: #ee7a12;
 }
 .Blog .down_wave {
@@ -1033,6 +1085,23 @@ nav button {
   color: #fff;
   font-weight: 700;
   line-height: 33px;
+  position: relative;
+}
+.Blog .down_wave button::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(238, 122, 18, 0.73);
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+  filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+}
+.Blog .down_wave button:hover::before {
+  opacity: 1;
 }
 
 .Contact {

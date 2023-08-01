@@ -40,7 +40,7 @@
             }
         }
 
-        button {
+        .githubLink {
             @include button($button_font_sm,34px,0);
             background-color: transparent;
             a {
@@ -60,7 +60,7 @@
     figure {
         .firgure_up {
             padding-bottom: 24px;
-            a {
+            .overlay {
                 position: relative;
                 display: inline-block;
                 overflow: hidden;

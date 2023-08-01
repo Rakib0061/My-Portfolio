@@ -29,6 +29,7 @@ $sass: #ce6b9c;
 $p_folio_btn: #002531;
 $input_btn :  #B7B7B7;
 $from_p:#D0D0D0;
+$btn_hover_color : rgb(238 122 18 / 73%);
 
 // font size
 $nav_logo_font: 35px;
@@ -70,6 +71,28 @@ $branch-fam: "Cabin", sans-serif;
   color: #fff;
   font-weight: 700;
   line-height: $l_height;
+}
+
+@mixin btn_animation (){
+  position: relative;
+
+  &::before {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background-color: $btn_hover_color;
+      bottom: -32px;
+      left: 50%;
+      transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+      filter: blur(10px);
+      transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+  }
+
+  &:hover::before {
+      opacity: 1;
+  }
 }
 
 @mixin icon(

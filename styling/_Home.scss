@@ -228,6 +228,7 @@
                 }
                 button {
                     @include button();
+                    @include btn_animation();
                 }
             }
         }
