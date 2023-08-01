@@ -1,0 +1,98 @@
+@import "./Variable";
+
+
+.Blog {
+    position: relative;
+    background: $bg1;
+    margin-bottom: -1px;
+    padding: 3% 0 3%;
+    z-index: 4;
+
+    & > img {
+        @include wave($rit:10%,$tp:-10%,$rot:0deg,$x:-10%,$y:0%,$tp_child:-10%,$rit_child:10.2%);
+    }
+
+    header {
+        h1 {
+            @include title($font:$h1_font_xl,$l-height:84px);
+            text-align: center;
+        }
+        p {
+            @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
+            color: $secendary_color;
+            text-align: center;
+            margin-bottom: 4%;
+            padding:  0 30% 0;
+        }
+    }
+
+    figure {
+        margin-bottom: 0;
+
+        img {
+
+        }
+        .figure_title {
+            margin-top: 12px;
+            
+            span {
+                @include title($family:$branch-fam,$font:$h2p_font,$l-height:22px);
+                color: $bg3;
+            }
+            h2 {
+                margin-top: 12px;
+                @include title($font:$button_font,$l-height:40px);
+                font-weight: 500;
+                transition: all 0.2s linear;
+            }
+            & > p {
+                @include title($family:$branch-fam,$font:$h2p_font,$l-height:22px);
+                color: $bg3;
+                margin-bottom: 36px;
+                padding-right: 36px;
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include button($h1p_font,30px, 0px);
+                background-color: transparent;
+                
+                p {   
+                    transition: all 0.2s linear;
+                    @include title($family:$branch-fam,$font:$h2p_font,$l-height:22px);
+                    padding-right:15px;
+                }
+                i {
+                    color: #fff;
+                    transition: all 0.2s linear;
+                }
+            }
+        }
+
+        &:hover .figure_title h2 {
+            color: $prim_color;
+        }
+
+        &:hover .figure_title button p {
+            color: $prim_color;
+        }
+
+        &:hover .figure_title button i {
+            color: $prim_color;
+        }
+
+    }
+
+    .down_wave {
+        text-align: center;
+        padding: 3% 0 0;
+        img {
+            @include wave($rit:0%,$btom:-15%,$rot:90deg,$x:0%,$y:0%,$btom_child:-14.3%,$rit_child:0%,$x1:0%,$y1:0%);
+        }
+        button {
+            @include button($button_font_sm,33px, 12px 55px);
+        }
+    }
+
+}    

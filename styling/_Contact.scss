@@ -1,0 +1,64 @@
+@import "./Variable";
+
+.Contact {    
+    position: relative;
+    background: $bg2;
+    margin-bottom: -1px;
+    padding: 6% 0 6%;
+    z-index: 4;
+    
+    & > img {
+        @include wave($lft:10%,$btom:-10%,$rot:0deg,$x:-10%,$y:0%,$btom_child:-10%,$lft_child:10.2%);
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        figure {
+            text-align: center;
+            background: $bg3;
+            margin-bottom: 0;
+            padding: 4% 11%;
+            
+            h1 {
+                @include title($font:$h1_font_xl,$l-height:84px);
+                text-align: center;
+            }
+            p {
+                @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
+                color: $from_p;
+                padding:  0 16% 5%;
+            }
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    border: none;
+                    background-color: $input_btn;
+                    height: 50px;
+
+                    &:focus-visible {
+                        outline: 0px;
+                        box-shadow: none;
+                    }
+
+                    &::placeholder {
+                        @include title($family:$branch-fam,$font:$h1p_font,$l-height:24px);
+                        color: $p_folio_btn;
+                    }
+
+                    &[type=email]{
+                        padding: 13px 224px 13px 50px
+                    }
+
+                    &[type=submit]{
+                        @include button($h1p_font,30px, 8px 52px);
+                    }
+                }
+            }
+        }
+    }
+}

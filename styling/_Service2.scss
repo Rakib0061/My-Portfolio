@@ -3,6 +3,9 @@
 .Service2 {
     background: $bg1;
     position: relative;
+    padding: 0 0 2%;
+    margin-bottom: -1px;
+    z-index: 2;
 
     & > img {
         @include wave($lft:-1%,$tp:50%,$rot:90deg,$x:0,$y:-50%,$tp_child:50.5%,$lft_child:-1%);

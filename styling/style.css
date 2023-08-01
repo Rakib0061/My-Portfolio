@@ -2,6 +2,7 @@
 nav {
   padding: 39px 0 !important;
   background: #000f17;
+  margin-bottom: -1px;
 }
 nav .navbar-brand {
   margin: 0 !important;
@@ -44,7 +45,7 @@ nav .navbar-nav .nav-item .nav-link::before {
 }
 nav .navbar-nav .nav-item .nav-link:hover {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
 }
 nav .navbar-nav .nav-item .nav-link.active,
 nav .navbar-nav .nav-item .navbar-nav .nav-link.show {
@@ -76,6 +77,7 @@ nav button {
   position: relative;
   background: #000f17;
   padding: 130px 0 0;
+  margin-bottom: -1px;
   z-index: 2;
 }
 .Home .social_media {
@@ -499,6 +501,9 @@ nav button {
 .Service2 {
   background: #000f17;
   position: relative;
+  padding: 0 0 2%;
+  margin-bottom: -1px;
+  z-index: 2;
 }
 .Service2 > img {
   position: absolute;
@@ -615,4 +620,664 @@ nav button {
   content: "";
   position: absolute;
   display: none;
+}
+
+.Portfolio {
+  position: relative;
+  background: #819098;
+  margin-bottom: -1px;
+  padding: 6% 0 6%;
+  z-index: 4;
+}
+.Portfolio > img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  bottom: inherit;
+  left: inherit;
+  width: 7px;
+  height: 154px;
+  transform: translate(0%, 10%) rotate(0deg);
+  transform-origin: 100% 100%;
+  filter: contrast(5.5);
+}
+.Portfolio > img:nth-child(2) {
+  top: -10%;
+  right: 10.2%;
+  bottom: inherit;
+  left: inherit;
+}
+.Portfolio header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.Portfolio header .title {
+  position: relative;
+}
+.Portfolio header .title h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px;
+  margin-bottom: 0;
+}
+.Portfolio header .title p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  padding-right: 30%;
+}
+.Portfolio header .title img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -40%) rotate(0deg);
+  z-index: -1;
+  filter: contrast(5.5);
+}
+.Portfolio header button {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 0;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 34px;
+  background-color: transparent;
+}
+.Portfolio header button a {
+  text-decoration: none;
+  color: #002531;
+}
+.Portfolio header button a span {
+  color: #ee7a12;
+}
+.Portfolio header button i {
+  color: #ee7a12;
+}
+.Portfolio figure .firgure_up {
+  padding-bottom: 24px;
+}
+.Portfolio figure .firgure_up a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.Portfolio figure .firgure_up a .item {
+  position: relative;
+}
+.Portfolio figure .firgure_up a .item img {
+  transition: all 0.2s linear;
+}
+.Portfolio figure .firgure_up a .item figure {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  display: none;
+  z-index: 2;
+}
+.Portfolio figure .firgure_up a .item figure h2 {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 0;
+  color: #ee7a12;
+  margin-bottom: 36px;
+  font-weight: 700;
+}
+.Portfolio figure .firgure_up a .item figure button {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 12px 22px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 33px;
+  background-color: transparent;
+  border: 2px solid #999;
+}
+.Portfolio figure .firgure_up a::before {
+  display: none;
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.Portfolio figure .firgure_up a:hover figure {
+  display: block;
+}
+.Portfolio figure .firgure_up a:hover img {
+  filter: blur(5px);
+  scale: 1.1;
+}
+.Portfolio figure .firgure_up a:hover::before {
+  display: block;
+}
+
+.About {
+  position: relative;
+  background: #002531;
+  margin-bottom: -1px;
+  padding: 9% 0 7%;
+  z-index: 3;
+}
+.About > img {
+  position: absolute;
+  top: -10%;
+  right: inherit;
+  bottom: inherit;
+  left: 10%;
+  width: 7px;
+  height: 154px;
+  transform: translate(-10%, 0%) rotate(0deg);
+  transform-origin: 100% 100%;
+}
+.About > img:nth-child(2) {
+  top: -10%;
+  right: inherit;
+  bottom: inherit;
+  left: 10.2%;
+}
+.About .left_figure header {
+  position: relative;
+}
+.About .left_figure header h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px;
+  margin-bottom: 0;
+  padding-right: 22%;
+}
+.About .left_figure header img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(180deg);
+  z-index: -1;
+  filter: brightness(1.4);
+}
+.About .left_figure figure p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  margin-bottom: 6%;
+}
+.About .left_figure figure button {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 12px 55px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 33px;
+}
+.About .right_figure figure {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 0;
+  position: relative;
+}
+.About .right_figure figure > img {
+  width: 470px;
+  height: 601px;
+  mix-blend-mode: luminosity;
+}
+.About .right_figure figure > img:nth-child(even) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+  mix-blend-mode: color;
+}
+.About .right_figure figure .icon img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(0%, -50%);
+  width: 138px;
+  height: 144px;
+  z-index: -1;
+}
+.About .right_figure figure .icon img:nth-child(2) {
+  position: absolute;
+  bottom: -5%;
+  right: -8%;
+  width: 138px;
+  height: 144px;
+  z-index: -1;
+}
+
+.Blog {
+  position: relative;
+  background: #000f17;
+  margin-bottom: -1px;
+  padding: 3% 0 3%;
+  z-index: 4;
+}
+.Blog > img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  bottom: inherit;
+  left: inherit;
+  width: 7px;
+  height: 154px;
+  transform: translate(-10%, 0%) rotate(0deg);
+  transform-origin: 100% 100%;
+}
+.Blog > img:nth-child(2) {
+  top: -10%;
+  right: 10.2%;
+  bottom: inherit;
+  left: inherit;
+}
+.Blog header h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.Blog header p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  text-align: center;
+  margin-bottom: 4%;
+  padding: 0 30% 0;
+}
+.Blog figure {
+  margin-bottom: 0;
+}
+.Blog figure .figure_title {
+  margin-top: 12px;
+}
+.Blog figure .figure_title span {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #819098;
+}
+.Blog figure .figure_title h2 {
+  margin-top: 12px;
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 0;
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+.Blog figure .figure_title > p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #819098;
+  margin-bottom: 36px;
+  padding-right: 36px;
+}
+.Blog figure .figure_title button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 0px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: transparent;
+}
+.Blog figure .figure_title button p {
+  transition: all 0.2s linear;
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+.Blog figure .figure_title button i {
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.Blog figure:hover .figure_title h2 {
+  color: #ee7a12;
+}
+.Blog figure:hover .figure_title button p {
+  color: #ee7a12;
+}
+.Blog figure:hover .figure_title button i {
+  color: #ee7a12;
+}
+.Blog .down_wave {
+  text-align: center;
+  padding: 3% 0 0;
+}
+.Blog .down_wave img {
+  position: absolute;
+  top: inherit;
+  right: 0%;
+  bottom: -15%;
+  left: inherit;
+  width: 7px;
+  height: 154px;
+  transform: translate(0%, 0%) rotate(90deg);
+  transform-origin: 0% 0%;
+}
+.Blog .down_wave img:nth-child(2) {
+  top: inherit;
+  right: 0%;
+  bottom: -14.3%;
+  left: inherit;
+}
+.Blog .down_wave button {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 12px 55px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.Contact {
+  position: relative;
+  background: #002531;
+  margin-bottom: -1px;
+  padding: 6% 0 6%;
+  z-index: 4;
+}
+.Contact > img {
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: -10%;
+  left: 10%;
+  width: 7px;
+  height: 154px;
+  transform: translate(-10%, 0%) rotate(0deg);
+  transform-origin: 100% 100%;
+}
+.Contact > img:nth-child(2) {
+  top: inherit;
+  right: inherit;
+  bottom: -10%;
+  left: 10.2%;
+}
+.Contact article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact article figure {
+  text-align: center;
+  background: #819098;
+  margin-bottom: 0;
+  padding: 4% 11%;
+}
+.Contact article figure h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 84px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.Contact article figure p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #D0D0D0;
+  padding: 0 16% 5%;
+}
+.Contact article figure form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact article figure form input {
+  border: none;
+  background-color: #B7B7B7;
+  height: 50px;
+}
+.Contact article figure form input:focus-visible {
+  outline: 0px;
+  box-shadow: none;
+}
+.Contact article figure form input::-moz-placeholder {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #002531;
+}
+.Contact article figure form input::placeholder {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #002531;
+}
+.Contact article figure form input[type=email] {
+  padding: 13px 224px 13px 50px;
+}
+.Contact article figure form input[type=submit] {
+  font-family: "Cabin", sans-serif;
+  border: none;
+  background-color: #ee7a12;
+  padding: 8px 52px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+footer {
+  position: relative;
+  background: #000f17;
+  padding: 130px 0 0;
+  margin-bottom: -1px;
+  z-index: 2;
+}
+footer nav .logo a {
+  text-decoration: none;
+}
+footer nav .logo a h1 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 0;
+  color: #999;
+}
+footer nav .logo a h1 span {
+  color: #ee7a12;
+  position: relative;
+}
+footer nav .logo a h1 span > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -40%) rotate(180deg);
+  z-index: 2;
+}
+footer nav .ul_item ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+footer nav .ul_item ul li {
+  padding-left: 30px;
+}
+footer nav .ul_item ul li a {
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  margin-bottom: 0;
+  color: #999;
+  transition: all 0.2s ease-in-out;
+}
+footer nav .ul_item ul li a::before {
+  display: block;
+  content: attr(title);
+  font-weight: 600;
+  font-size: 24px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+footer nav .ul_item ul li a:hover {
+  font-weight: 600;
+  font-size: 22px;
+}
+footer figure .figure_left p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  padding-right: 30%;
+}
+footer figure .figure_right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+footer figure .figure_right ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer figure .figure_right ul li {
+  list-style: none;
+  padding-left: 30px;
+}
+footer figure .figure_right ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+footer figure .figure_right ul li a i {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 100%;
+}
+footer figure .figure_right ul li a:hover .fa-discord {
+  color: #5562ea;
+  background-color: #fff;
+}
+footer figure .figure_right ul li a:hover .fa-instagram {
+  color: #fff;
+  background: linear-gradient(to bottom, #aa2fb5 0%, #ee7a12 93%);
+}
+footer figure .figure_right ul li a:hover .fa-telegram-plane {
+  color: #fff;
+  background-color: #27a3e2;
+}
+footer figure .figure_right ul li a:hover .fa-facebook-f {
+  color: #fff;
+  background-color: #27a3e2;
+}
+footer figure .figure_right ul li a:hover .fa-linkedin-in {
+  color: #fff;
+  background-color: #0077b5;
+}
+footer figure .copywright {
+  text-align: center;
+}
+footer figure .copywright p {
+  font-family: "Cabin", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #999;
+  padding: 4% 0 1%;
+  letter-spacing: 0.26px;
 }/*# sourceMappingURL=style.css.map */

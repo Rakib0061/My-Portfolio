@@ -18,6 +18,7 @@ $dotted_line: repeating-linear-gradient(
   transparent 15px,
   transparent 25px
 );
+$overlay: linear-gradient(0deg, rgb(0 0 0 / 40%) 0%, rgb(0 0 0 / 40%) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
 $telegram: #27a3e2;
 $fb: #27a3e2;
 $l-din: #0077b5;
@@ -25,6 +26,9 @@ $html: #e5532d;
 $css: #2899f3;
 $js: #ffe008;
 $sass: #ce6b9c;
+$p_folio_btn: #002531;
+$input_btn :  #B7B7B7;
+$from_p:#D0D0D0;
 
 // font size
 $nav_logo_font: 35px;
@@ -35,10 +39,12 @@ $h1_font: 60px;
 $h1_font_xl: 70px;
 $h1p_font: 19px;
 $h2_font: 35px;
+$h2_font_sm: 30px;
 $h2p_font: 15px;
 $button_font: 26px;
 $button_font_sm: 22px;
 $board_font: 40px;
+$copwright_font :13px;
 
 // family
 $prime-fam: "bon_foyage_demo";
@@ -66,7 +72,14 @@ $branch-fam: "Cabin", sans-serif;
   line-height: $l_height;
 }
 
-@mixin icon ($top: inherit,$lft: inherit,$rit: inherit,$btm: inherit,$icon_bg: $bg1,$icon_clr: #fff) {
+@mixin icon(
+  $top: inherit,
+  $lft: inherit,
+  $rit: inherit,
+  $btm: inherit,
+  $icon_bg: $bg1,
+  $icon_clr: #fff
+) {
   position: absolute;
   z-index: 1;
   top: $top;
@@ -86,7 +99,21 @@ $branch-fam: "Cabin", sans-serif;
   }
 }
 
-@mixin wave ($tp:inherit,$rit:inherit,$lft:inherit,$btom:inherit,$rot:1deg,$x:0,$y:0,$tp_child:inherit,$rit_child:inherit,$lft_child:inherit,$btom_child:inherit,$x1:100%,$y1:100%){
+@mixin wave(
+  $tp: inherit,
+  $rit: inherit,
+  $lft: inherit,
+  $btom: inherit,
+  $rot: 1deg,
+  $x: 0,
+  $y: 0,
+  $tp_child: inherit,
+  $rit_child: inherit,
+  $lft_child: inherit,
+  $btom_child: inherit,
+  $x1: 100%,
+  $y1: 100%
+) {
   position: absolute;
   top: $tp;
   right: $rit;
@@ -94,10 +121,10 @@ $branch-fam: "Cabin", sans-serif;
   left: $lft;
   width: 7px;
   height: 154px;
-  transform: translate($x,$y) rotate($rot);
+  transform: translate($x, $y) rotate($rot);
   transform-origin: $x1 $y1;
-  
-   &:nth-child(2) {
+
+  &:nth-child(2) {
     top: $tp_child;
     right: $rit_child;
     bottom: $btom_child;

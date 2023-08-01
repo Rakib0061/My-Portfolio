@@ -1,0 +1,94 @@
+@import "./Variable";
+
+.About {
+    position: relative;
+    background: $bg2;
+    margin-bottom: -1px;
+    padding: 9% 0 7%;
+    z-index: 3;
+
+    & > img {
+        @include wave($lft:10%,$tp:-10%,$rot:0deg,$x:-10%,$y:0%,$tp_child:-10%,$lft_child:10.2%);
+    }
+
+    .left_figure {
+        header {
+            position: relative;
+            h1 {
+                @include title($font:$h1_font_xl,$l-height:84px);
+                padding-right: 22%;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%) rotate(180deg);
+                z-index: -1;
+                filter: brightness(1.4);
+            }
+        }
+        figure {
+            p {
+                @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
+                color: $secendary_color;
+                margin-bottom: 6%;
+            }
+
+            button {
+                @include button($button_font_sm,33px, 12px 55px);
+            }
+        }
+    }
+
+    .right_figure{
+        figure {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-bottom: 0;
+            position: relative;
+
+            & > img {
+                width: 470px;
+                height: 601px;
+                mix-blend-mode: luminosity;
+
+                &:nth-child(even) {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 40%;
+                    mix-blend-mode: color;
+                    
+                }
+            }
+
+            .icon {
+                img {
+                    &:nth-child(1){
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        transform: translate(0%,-50%);
+                        width: 138px;
+                        height: 144px;
+                        z-index: -1;
+                    }
+    
+                    &:nth-child(2){
+                        position: absolute;
+                        bottom: -5%;
+                        right: -8%;
+                        width: 138px;
+                        height: 144px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            
+        }
+        
+    }
+
+}
