@@ -140,7 +140,7 @@ window.addEventListener("scroll", () => {
   let Y = window.scrollY;
   if (Y > 80) {
     count = true;
-    counting();
+    // counting();
   }
 });
 

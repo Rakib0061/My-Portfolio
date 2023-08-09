@@ -7,145 +7,147 @@ footer {
     margin-bottom: -1px;
     z-index: 2;
 
-    nav {
-        .logo {
-            a {
-                text-decoration: none;
-                h1 {
-                    @include title($font: $nav_logo_font, $l-height: 35px);
-                    color: $secendary_color;
-                    span {
-                        color: $prim_color;
-                        position: relative;
-
-                        & > img {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        transform: translate(-50%, -40%) rotate(180deg);
-                        z-index: 2;
-                    }
-                    }
-                }
-
-                
-            }
-            
-        }
-
-        .ul_item {
-            ul {
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                li {
-                    padding-left: 30px;
-                    list-style: none;
-
-                    a {
-                        text-decoration: none;
-                        @include title($family: $branch-fam, $font: $nav_item_font,$l-height: 31px);
+    article {
+        & > nav {
+            .logo {
+                a {
+                    text-decoration: none;
+                    h1 {
+                        @include title($font: $nav_logo_font, $l-height: 35px);
                         color: $secendary_color;
-                        transition: all 0.2s ease-in-out;
-                
-                        &::before {
-                          display: block;
-                          content: attr(data-footer);
-                          font-weight: 600;
-                          font-size: 24px;
-                          height: 0;
-                          overflow: hidden;
-                          visibility: hidden;
+                        span {
+                            color: $prim_color;
+                            position: relative;
+    
+                            & > img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transform: translate(-50%, -40%) rotate(180deg);
+                            z-index: 2;
                         }
+                        }
+                    }
+    
+                    
+                }
                 
-                        &:hover {
-                          font-weight: 600;
-                          font-size: 22px;
+            }
+    
+            .ul_item {
+                ul {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    li {
+                        padding-left: 30px;
+                        list-style: none;
+    
+                        a {
+                            text-decoration: none;
+                            @include title($family: $branch-fam, $font: $nav_item_font,$l-height: 31px);
+                            color: $secendary_color;
+                            transition: all 0.2s ease-in-out;
+                    
+                            &::before {
+                              display: block;
+                              content: attr(data-footer);
+                              font-weight: 600;
+                              font-size: 24px;
+                              height: 0;
+                              overflow: hidden;
+                              visibility: hidden;
+                            }
+                    
+                            &:hover {
+                              font-weight: 600;
+                              font-size: 22px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-
-    figure {
-        margin-bottom:  0;
-        .figure_left {
-            p {
-                @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
-                color: $secendary_color;
-                padding-right: 30%;
+    
+        figure {
+            margin-bottom:  0;
+            .figure_left {
+                p {
+                    @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
+                    color: $secendary_color;
+                    padding-right: 30%;
+                }
             }
-        }
-        .figure_right {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            
-            ul {
-                padding: 0;
-                margin: 0;
+            .figure_right {
                 display: flex;
-                flex-direction: row;
                 align-items: center;
-                justify-content: space-around;
-            
-                li {
-                    list-style: none;
-                    padding-left: 30px;
-            
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                        transition: all 0.4s ease-in-out;
-            
-                        i {
-                            font-size: 30px;
-                            width: 50px;
-                            height: 50px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: transparent;
-                            border-radius: 100%;
-                        }
-            
-                        &:hover .fa-discord {
-                            color: $discord;
-                            background-color: #fff;
-                        }
-            
-                        &:hover .fa-instagram{
+                justify-content: end;
+                
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                
+                    li {
+                        list-style: none;
+                        padding-left: 30px;
+                
+                        a {
+                            text-decoration: none;
                             color: #fff;
-                            background: $insta;
+                            transition: all 0.4s ease-in-out;
+                
+                            i {
+                                font-size: 30px;
+                                width: 50px;
+                                height: 50px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: transparent;
+                                border-radius: 100%;
+                            }
+                
+                            &:hover .fa-discord {
+                                color: $discord;
+                                background-color: #fff;
+                            }
+                
+                            &:hover .fa-instagram{
+                                color: #fff;
+                                background: $insta;
+                            }
+                
+                            &:hover .fa-telegram-plane {
+                                color: #fff;
+                                background-color: $telegram;
+                            }
+                
+                            &:hover .fa-facebook-f {
+                                color: #fff;
+                                background-color: $fb;
+                            }
+                
+                            &:hover .fa-linkedin-in {
+                                color: #fff;
+                                background-color: $l-din;
+                            }
+                            
                         }
-            
-                        &:hover .fa-telegram-plane {
-                            color: #fff;
-                            background-color: $telegram;
-                        }
-            
-                        &:hover .fa-facebook-f {
-                            color: #fff;
-                            background-color: $fb;
-                        }
-            
-                        &:hover .fa-linkedin-in {
-                            color: #fff;
-                            background-color: $l-din;
-                        }
-                        
                     }
                 }
             }
-        }
-        .copywright {
-            text-align: center;
-            p {
-                @include title($family:$branch-fam,$font:$copwright_font,$l-height:28px);
-                color: $secendary_color;
-                padding: 4% 0 1%;
-                letter-spacing: 0.26px;
+            .copywright {
+                text-align: center;
+                p {
+                    @include title($family:$branch-fam,$font:$copwright_font,$l-height:28px);
+                    color: $secendary_color;
+                    padding: 4% 0 1%;
+                    letter-spacing: 0.26px;
+                }
             }
         }
     }

@@ -77,20 +77,23 @@ $branch-fam: "Cabin", sans-serif;
   position: relative;
 
   &::before {
-      opacity: 0;
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 50%;
-      background-color: $btn_hover_color;
-      bottom: -32px;
-      left: 50%;
-      transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
-      filter: blur(10px);
-      transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+    display: none;
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: $btn_hover_color;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%) perspective(2em) rotateX(50deg) scale(1.6, 1);
+    filter: blur(10px);
+    transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
+    
   }
 
   &:hover::before {
+      display: block;
       opacity: 1;
   }
 }

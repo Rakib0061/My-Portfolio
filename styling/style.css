@@ -337,6 +337,7 @@ nav button {
   position: relative;
 }
 .Home article .right_article figure button::before {
+  display: none;
   opacity: 0;
   content: "";
   position: absolute;
@@ -350,6 +351,7 @@ nav button {
   transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
 }
 .Home article .right_article figure button:hover::before {
+  display: block;
   opacity: 1;
 }
 .Home .dashboard {
@@ -453,6 +455,7 @@ nav button {
   position: relative;
 }
 .Service .left_article figure button::before {
+  display: none;
   opacity: 0;
   content: "";
   position: absolute;
@@ -466,6 +469,7 @@ nav button {
   transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
 }
 .Service .left_article figure button:hover::before {
+  display: block;
   opacity: 1;
 }
 .Service .right_article .area {
@@ -890,6 +894,7 @@ nav button {
   position: relative;
 }
 .About .left_figure figure button::before {
+  display: none;
   opacity: 0;
   content: "";
   position: absolute;
@@ -903,6 +908,7 @@ nav button {
   transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
 }
 .About .left_figure figure button:hover::before {
+  display: block;
   opacity: 1;
 }
 .About .right_figure figure {
@@ -1101,6 +1107,7 @@ nav button {
   position: relative;
 }
 .Blog .down_wave button::before {
+  display: none;
   opacity: 0;
   content: "";
   position: absolute;
@@ -1114,6 +1121,7 @@ nav button {
   transition: all 0.2s cubic-bezier(0.57, 0.26, 0.84, 1.35);
 }
 .Blog .down_wave button:hover::before {
+  display: block;
   opacity: 1;
 }
 
@@ -1228,10 +1236,10 @@ footer {
   margin-bottom: -1px;
   z-index: 2;
 }
-footer nav .logo a {
+footer article > nav .logo a {
   text-decoration: none;
 }
-footer nav .logo a h1 {
+footer article > nav .logo a h1 {
   font-family: "bon_foyage_demo";
   color: #fff;
   font-size: 35px;
@@ -1241,27 +1249,27 @@ footer nav .logo a h1 {
   margin-bottom: 0;
   color: #999;
 }
-footer nav .logo a h1 span {
+footer article > nav .logo a h1 span {
   color: #ee7a12;
   position: relative;
 }
-footer nav .logo a h1 span > img {
+footer article > nav .logo a h1 span > img {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-50%, -40%) rotate(180deg);
   z-index: 2;
 }
-footer nav .ul_item ul {
+footer article > nav .ul_item ul {
   display: flex;
   justify-content: end;
   align-items: center;
 }
-footer nav .ul_item ul li {
+footer article > nav .ul_item ul li {
   padding-left: 30px;
   list-style: none;
 }
-footer nav .ul_item ul li a {
+footer article > nav .ul_item ul li a {
   text-decoration: none;
   font-family: "Cabin", sans-serif;
   color: #fff;
@@ -1273,7 +1281,7 @@ footer nav .ul_item ul li a {
   color: #999;
   transition: all 0.2s ease-in-out;
 }
-footer nav .ul_item ul li a::before {
+footer article > nav .ul_item ul li a::before {
   display: block;
   content: attr(data-footer);
   font-weight: 600;
@@ -1282,14 +1290,14 @@ footer nav .ul_item ul li a::before {
   overflow: hidden;
   visibility: hidden;
 }
-footer nav .ul_item ul li a:hover {
+footer article > nav .ul_item ul li a:hover {
   font-weight: 600;
   font-size: 22px;
 }
-footer figure {
+footer article figure {
   margin-bottom: 0;
 }
-footer figure .figure_left p {
+footer article figure .figure_left p {
   font-family: "Cabin", sans-serif;
   color: #fff;
   font-size: 19px;
@@ -1300,12 +1308,12 @@ footer figure .figure_left p {
   color: #999;
   padding-right: 30%;
 }
-footer figure .figure_right {
+footer article figure .figure_right {
   display: flex;
   align-items: center;
   justify-content: end;
 }
-footer figure .figure_right ul {
+footer article figure .figure_right ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -1313,16 +1321,16 @@ footer figure .figure_right ul {
   align-items: center;
   justify-content: space-around;
 }
-footer figure .figure_right ul li {
+footer article figure .figure_right ul li {
   list-style: none;
   padding-left: 30px;
 }
-footer figure .figure_right ul li a {
+footer article figure .figure_right ul li a {
   text-decoration: none;
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
-footer figure .figure_right ul li a i {
+footer article figure .figure_right ul li a i {
   font-size: 30px;
   width: 50px;
   height: 50px;
@@ -1332,30 +1340,30 @@ footer figure .figure_right ul li a i {
   background-color: transparent;
   border-radius: 100%;
 }
-footer figure .figure_right ul li a:hover .fa-discord {
+footer article figure .figure_right ul li a:hover .fa-discord {
   color: #5562ea;
   background-color: #fff;
 }
-footer figure .figure_right ul li a:hover .fa-instagram {
+footer article figure .figure_right ul li a:hover .fa-instagram {
   color: #fff;
   background: linear-gradient(to bottom, #aa2fb5 0%, #ee7a12 93%);
 }
-footer figure .figure_right ul li a:hover .fa-telegram-plane {
+footer article figure .figure_right ul li a:hover .fa-telegram-plane {
   color: #fff;
   background-color: #27a3e2;
 }
-footer figure .figure_right ul li a:hover .fa-facebook-f {
+footer article figure .figure_right ul li a:hover .fa-facebook-f {
   color: #fff;
   background-color: #27a3e2;
 }
-footer figure .figure_right ul li a:hover .fa-linkedin-in {
+footer article figure .figure_right ul li a:hover .fa-linkedin-in {
   color: #fff;
   background-color: #0077b5;
 }
-footer figure .copywright {
+footer article figure .copywright {
   text-align: center;
 }
-footer figure .copywright p {
+footer article figure .copywright p {
   font-family: "Cabin", sans-serif;
   color: #fff;
   font-size: 13px;
@@ -1366,4 +1374,8 @@ footer figure .copywright p {
   color: #999;
   padding: 4% 0 1%;
   letter-spacing: 0.26px;
+}
+
+html {
+  scroll-padding-top: 90px;
 }/*# sourceMappingURL=style.css.map */
