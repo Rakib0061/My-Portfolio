@@ -3,6 +3,7 @@ nav {
   padding: 39px 0 !important;
   background: #000f17;
   margin-bottom: -1px;
+  transition: padding 0.2s ease-in-out;
 }
 nav .navbar-brand {
   margin: 0 !important;
@@ -36,7 +37,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 nav .navbar-nav .nav-item .nav-link::before {
   display: block;
-  content: attr(title);
+  content: attr(data-title);
   font-weight: 600;
   font-size: 24px;
   height: 0;
@@ -71,6 +72,7 @@ nav button {
   background-color: #000f17;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  padding: 35px 0 !important;
 }
 
 .Home {
@@ -286,7 +288,16 @@ nav button {
   line-height: 126px;
   margin-bottom: 0;
 }
-.Home article .right_article header img:nth-child(2) {
+.Home article .right_article header h2 {
+  font-family: "bon_foyage_demo";
+  color: #fff;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126px;
+  margin-bottom: 0;
+}
+.Home article .right_article header img:nth-child(3) {
   position: absolute;
   width: 10px;
   height: 200px;
@@ -295,12 +306,13 @@ nav button {
   bottom: 10%;
   left: 0;
 }
-.Home article .right_article header img:nth-child(3) {
+.Home article .right_article header img:nth-child(4) {
   position: absolute;
   width: 95.705px;
   height: 93px;
-  right: -11%;
-  top: 10%;
+  right: 0%;
+  top: 15%;
+  z-index: -1;
 }
 .Home article .right_article figure p {
   font-family: "Cabin", sans-serif;
@@ -682,9 +694,6 @@ nav button {
   left: inherit;
 }
 .Portfolio header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-bottom: 5%;
 }
 .Portfolio header .title {
@@ -707,7 +716,7 @@ nav button {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 0;
-  padding-right: 30%;
+  padding-right: 25%;
 }
 .Portfolio header .title img {
   position: absolute;
@@ -727,6 +736,9 @@ nav button {
   font-weight: 700;
   line-height: 34px;
   background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .Portfolio header .githubLink a {
   text-decoration: none;
@@ -737,6 +749,7 @@ nav button {
 }
 .Portfolio header .githubLink i {
   color: #ee7a12;
+  padding-left: 20px;
 }
 .Portfolio figure .firgure_up {
   padding-bottom: 24px;
@@ -1246,6 +1259,7 @@ footer nav .ul_item ul {
 }
 footer nav .ul_item ul li {
   padding-left: 30px;
+  list-style: none;
 }
 footer nav .ul_item ul li a {
   text-decoration: none;
@@ -1261,7 +1275,7 @@ footer nav .ul_item ul li a {
 }
 footer nav .ul_item ul li a::before {
   display: block;
-  content: attr(title);
+  content: attr(data-footer);
   font-weight: 600;
   font-size: 24px;
   height: 0;
@@ -1271,6 +1285,9 @@ footer nav .ul_item ul li a::before {
 footer nav .ul_item ul li a:hover {
   font-weight: 600;
   font-size: 22px;
+}
+footer figure {
+  margin-bottom: 0;
 }
 footer figure .figure_left p {
   font-family: "Cabin", sans-serif;

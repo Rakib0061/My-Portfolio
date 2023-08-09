@@ -200,8 +200,12 @@
                 h1 {
                     @include title($font:$title_font,$l-height:126px);
                 }
+                h2 {
+                    @include title($font:$title_font,$l-height:126px);
+                }
+                
                 img {
-                    &:nth-child(2){
+                    &:nth-child(3){
                         position: absolute;
                         width: 10px;
                         height: 200px;
@@ -211,12 +215,13 @@
                         left: 0;
                     }
     
-                    &:nth-child(3) {
+                    &:nth-child(4) {
                         position: absolute;
                         width: 95.705px;
                         height: 93px;
-                        right: -11%;
-                        top: 10%;
+                        right: 0%;
+                        top: 15%;
+                        z-index: -1;
                     }
                 }
             }

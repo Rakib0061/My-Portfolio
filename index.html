@@ -24,19 +24,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" title="Home" aria-current="page" href="#Home">Home</a>
+                <a class="nav-link active" data-title="Home" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="About" href="#About">About</a>
+                <a class="nav-link" data-title="About" href="#About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="Portfolio" href="#Portfolio">Portfolio</a>
+                <a class="nav-link" data-title="Portfolio" href="#Portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="Blog" href="#Blog">Blog</a>
+                <a class="nav-link" data-title="Blog" href="#Blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" title="Contact" href="#Contact">Contact</a>
+                <a class="nav-link" data-title="Contact" href="#Contact">Contact</a>
               </li>
             </ul>
             <button>
@@ -89,12 +89,13 @@
           <div class="col-xxl-6 col-xl-6">
             <div class="right_article">
               <header>
-                <h1>Hey,I’m Rakib Islam A Web Developer.</h1>
+                <h1>Hey, I’m Rakib</h1>
+                <h2>A <span id="blinking_text"></span></h2>
                 <img src="./photos/weave.png" alt="wave">
                 <img src="./photos/icon_circle.png" alt="icon_circle">
               </header>
               <figure>
-                <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p>I'm currently majoring a Bachelor's degree in MANAGEMENT. I like to work activities that have to do with ideas and thinking. I like to search facts which have realistic interests.</p>
                 <button>Lets talk</button>
               </figure>
             </div>
@@ -106,28 +107,28 @@
               <div class="col-xxl-3 col-xl-3">
                 <div class="dashboard_icon">
                   <img src="./photos/icon_project.png" alt="Project">
-                  <h1>3.5K+</h1>
+                  <h1><span class="num_anim" data-num="3.5"></span>K+</h1>
                   <h2>Project Done</h2>
                 </div>
               </div>
               <div class="col-xxl-3 col-xl-3">
                 <div class="dashboard_icon">
                   <img src="./photos/icon_clint.png" alt="icon_clint">
-                  <h1>1K+</h1>
+                  <h1><span class="num_anim" data-num="1"></span>K+</h1>
                   <h2>Client</h2>
                 </div>
               </div>
               <div class="col-xxl-3 col-xl-3">
                 <div class="dashboard_icon">
                   <img src="./photos/icon_cup.png" alt="icon_cup">
-                  <h1>2K+</h1>
+                  <h1><span class="num_anim" data-num="2"></span>K+</h1>
                   <h2>Cups Of Coffee</h2>
                 </div>
               </div>
               <div class="col-xxl-3 col-xl-3">
                 <div class="dashboard_icon">
                   <img src="./photos/icon_exprence.png" alt="icon_exprence">
-                  <h1>14+</h1>
+                  <h1><span class="num_anim" data-num="14"></span>+</h1>
                   <h2>Years Exprience</h2>
                 </div>
               </div>
@@ -151,7 +152,7 @@
               </header>
               <figure>
                 <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button>ALl Services</button>
+                <button>All Services</button>
               </figure>
             </div>
           </div>
@@ -277,15 +278,21 @@
       <img src="./photos/wave_yellow.png" alt="wave_yellow">
       <article class="container">
         <header>
-          <div class="title">
-            <h1>All Creative Works</h1>
-            <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do veniam consequat sunt nostrud amet.</p>
-            <img src="./photos/icon_circleYellow.png" alt="">
+          <div class="row align-items-center">
+            <div class="col-xxl-8 col-xl-8">
+              <div class="title">
+                <h1>All Creative Works</h1>
+                <p>Amet minim mollit non deserunt ullamco est siitnt aliqua dolor do veniam consequat sunt nostrud amet.</p>
+                <img src="./photos/icon_circleYellow.png" alt="">
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4">
+              <div class="githubLink">
+                <a href="https://github.com/Rakib0061?tab=repositories" target="_blank">Discover All Project <span>on GitHub</span></a>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
           </div>
-          <div class="githubLink">
-            <a href="https://github.com/Rakib0061?tab=repositories" target="_blank">Discover All Project <span>on GitHub</span></a>
-            <i class="fa-solid fa-arrow-right-long"></i>
-          </div class="githubLink">
         </header>
         <figure>
           <div class="firgure_up">
@@ -426,7 +433,7 @@
                 <div class="read_link">
                   <a href="#">Read More</a>
                   <i class="fa-solid fa-arrow-right-long"></i>
-                </div class="read_link">
+                </div>
               </div>
             </figure>
           </div>
@@ -440,7 +447,7 @@
                 <div class="read_link">
                   <a href="#">Read More</a>
                   <i class="fa-solid fa-arrow-right-long"></i>
-                </div class="read_link">
+                </div>
               </div>
             </figure>
           </div>
@@ -454,7 +461,7 @@
                 <div class="read_link">
                   <a href="#">Read More</a>
                   <i class="fa-solid fa-arrow-right-long"></i>
-                </div class="read_link">
+                </div>
               </div>
             </figure>
           </div>
@@ -468,7 +475,7 @@
                 <div class="read_link">
                   <a href="#">Read More</a>
                   <i class="fa-solid fa-arrow-right-long"></i>
-                </div class="read_link">
+                </div>
               </div>
             </figure>
           </div>
@@ -512,10 +519,10 @@
             <div class="col-xxl-6 col-xl-6">
               <div class="ul_item">
                 <ul>
-                  <li><a title="Home" href="#">Home</a></li>
-                  <li><a title="About" href="#">About</a></li>
-                  <li><a title="Blog" href="#">Blog</a></li>
-                  <li><a title="Contact" href="#">Contact</a></li>
+                  <li><a data-footer="Home" href="#">Home</a></li>
+                  <li><a data-footer="About" href="#">About</a></li>
+                  <li><a data-footer="Blog" href="#">Blog</a></li>
+                  <li><a data-footer="Contact" href="#">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -548,7 +555,6 @@
     </article>
     </footer>
     <!--################ FOOTER ################-->
-
 
     </main>
 

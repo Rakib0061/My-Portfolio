@@ -13,9 +13,6 @@
     }
 
     header { 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding-bottom: 5%;
 
         .title {
@@ -27,7 +24,7 @@
             
             p {
                 @include title($family:$branch-fam,$font:$h1p_font,$l-height:28px);
-                padding-right: 30%;
+                padding-right: 25%;
             }
 
             img {
@@ -43,6 +40,10 @@
         .githubLink {
             @include button($button_font_sm,34px,0);
             background-color: transparent;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
             a {
                 text-decoration: none;
                 color: $p_folio_btn;
@@ -52,7 +53,7 @@
             }
             i {
                 color: $prim_color;
-
+                padding-left: 20px;
             }
         }
     }
