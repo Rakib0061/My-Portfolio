@@ -6,6 +6,15 @@ nav {
   margin-bottom: -1px;
   transition: padding 0.2s ease-in-out;
 
+  .navbar-toggler {
+    background-color: $prim_color;  
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+}
+
   .navbar-brand {
     margin: 0 !important;
     h1 {

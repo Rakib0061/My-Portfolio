@@ -5,6 +5,13 @@ nav {
   margin-bottom: -1px;
   transition: padding 0.2s ease-in-out;
 }
+nav .navbar-toggler {
+  background-color: #ee7a12;
+}
+nav .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+}
 nav .navbar-brand {
   margin: 0 !important;
 }
