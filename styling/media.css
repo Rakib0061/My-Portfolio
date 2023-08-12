@@ -1607,7 +1607,7 @@
 @media (max-width: 320px) { 
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 285px !important;
+        max-width: 275px !important;
     }
 
     nav .navbar-brand h1 {

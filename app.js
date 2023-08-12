@@ -117,7 +117,7 @@ function counting() {
         }
         vlu.innerHTML = counter.toFixed(decimal);
       }, duration);
-
+ 
       // let interval = function () {
       //   counter += increment;
       //   if (counter >= data_num) {
