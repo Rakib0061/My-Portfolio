@@ -374,7 +374,7 @@
 
  }
 
- /* X-Large devices (large desktops, 1200px and up) */
+ /* X-Large devices (large desktops, 1199px and up) */
 @media (max-width: 1199px) { 
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -813,7 +813,7 @@
 
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 991px and up) */
 @media (max-width: 991px) { 
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1048,7 +1048,7 @@
 
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 767px and up) */
 @media (max-width: 767px) { 
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1061,6 +1061,11 @@
 
     nav .navbar-nav .nav-item .nav-link {
         text-align: center;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
     }
 
     .Home article .right_article header h1 {
@@ -1205,6 +1210,10 @@
         font-size: 50px;
     }
 
+    .Blog figure {
+        width: 50%;
+    }
+
     .Blog .down_wave button {
         padding: 5px 28px;
         font-size: 18px;
@@ -1264,11 +1273,863 @@
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (max-width: 680px) { 
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 570px !important;
+    }
+
+    .Home .social_media ul {
+        width: 30px;
+        height: 165px;
+    }
+
+    .Home .social_media ul {
+        width: 30px;
+        height: 165px;
+    }
+
+    .Home .social_media > p {
+        font-size: 16px;
+        line-height: 6px;
+        padding: 13px 8px;
+    }
+
+    .Service2 figure .figure_right .experience {
+        padding-right: 13%;
+    }
+
+    .Service2 figure .figure_left .experience {
+        padding-left: 13%;
+    }
+
+    .Service2 figure .figure_left .experience h2 {
+        font-size: 20px;
+    }
+
+    .Service2 figure .figure_left .experience::after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .About .left_figure header h1 {
+        font-size: 42px;
+    }
+
+    .About .left_figure figure p {
+        font-size: 14px;
+    }
+
+    .About .left_figure figure button {
+        padding: 5px 22px;
+        font-size: 17px;
+    }
+
+    .About .right_figure figure > img {
+        width: 310px;
+        height: 410px;
+    }
+
+    .About .right_figure figure .icon img:nth-child(1) {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Portfolio header .title h1 {
+        font-size: 50px;
+    }
+
+    .Portfolio header .title img {
+        left: 20%;
+        top: 10px;
+    }
+
+    .Blog header h1 {
+        font-size: 48px;
+    }
+
+    .Blog header p {
+        font-size: 15px;
+    }
+
+    .Contact article figure {
+        padding: 5% 10%;
+    }
+
+    .Contact article figure h1 {
+        font-size: 48px;
+    }
+
+    .Contact article figure form input[type=email] {
+        padding: 5px 60px 5px 10px;
+    }
+
+    .Contact article figure form input::placeholder {
+        font-size: 17px;
+    }
+
+    .Contact article figure form input[type=submit] {
+        padding: 5px 22px;
+        font-size: 16px;
+    }
 
 }
+
+/* Small devices (landscape phones, 575px and up) */
+@media (max-width: 575px) { 
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 510px !important;
+    }
+
+    nav .navbar-brand {
+        margin: 0px !important;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .navbar-toggler {
+        padding: 3px 10px;
+    }
+
+    nav .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+    }
+
+    nav button {
+        padding: 5px 15px;
+        font-size: 17px;
+    }
+
+    .Home article .right_article header h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .Home article .right_article header h2 {
+        font-size: 55px;
+        line-height: 60px;
+        padding-left: 12%;
+    }
+
+    .Home article .right_article header img:nth-child(3) {
+        left: 16%;
+        height: 120px;
+    }
+
+    .Home article .right_article figure p {
+        font-size: 13px;
+    }
+
+    .Home article .right_article figure button {
+        padding: 3px 15px;
+        font-size: 18px;
+    }
+
+    .Home article .left_article figure .banner_img img {
+        width: 310px;
+        height: 430px;
+    }
+
+    .Home article .left_article figure .icon i {
+        width: 25px;
+        height: 25px;
+        font-size: 21px;
+    }
+
+    .Home article .left_article figure .icon i:nth-child(4) {
+        font-size: 13px;
+    }
+
+    .Home article .left_article figure .icon img:nth-child(5) {
+        width: 25px;
+        height: 25px;
+    }
+
+    .Home article .left_article figure .icon img:nth-child(6) {
+        width: 25px;
+        height: 25px;
+    }
+
+    .Home .social_media ul li a i {
+        font-size: 14px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .Home .dashboard {
+        height: 290px;
+    }
+
+    .custop_col_width {
+        width: 50% !important;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon h1 {
+        font-size: 22px;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon h2 {
+        font-size: 22px;
+    }
+
+    .Home article {
+        padding: 0 0 40%;
+    }
+
+    .Service {
+        padding: 30% 0 5%;
+    }
+
+    .Service .left_article header h1 {
+        font-size: 45px;
+    }
+
+    .Service .left_article figure p {
+        font-size: 12px;
+    }
+
+    .Service .left_article figure button {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+
+    .Service .right_article .area .web figure {
+        padding: 40px 10px;
+    }
+
+    .Service .right_article .area .web figure img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Service .right_article .area .web figure h2 {
+        font-size: 20px;
+    }
+
+    .Service2 header h1 {
+        font-size: 45px;
+    }
+
+    .Service2 header P {
+        font-size: 13px;
+    }
+
+    .custop_col_width_service {
+        width: 50% !important;
+    }
+
+    .Service2 figure .figure_left .experience h2 {
+        font-size: 18px;
+    }
+
+    .Service2 figure .figure_right .experience p {
+        font-size: 11px;
+    }
+
+    .About .left_figure header h1 {
+        font-size: 38px;
+    }
+
+    .About .left_figure figure p {
+        font-size: 13px;
+    }
+
+    .About .left_figure figure button {
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+
+    .About .right_figure figure > img {
+        width: 290px;
+        height: 390px;
+    }
+
+    .About .right_figure figure .icon img:nth-child(1) {
+        width: 90px;
+        height: 90px;
+    }
+
+    .Portfolio header .title h1 {
+        font-size: 45px;
+    }
+
+    .Portfolio header .title p {
+        font-size: 14px;
+    }
+
+    .custom_width_Portfolio {
+        justify-content: center;
+        padding-bottom: 24px;
+    }
+
+    .Blog .down_wave {
+        padding: 0 0 5%;
+    }
+
+    .Contact article figure h1 {
+        font-size: 42px;
+    }
+
+    .Contact article figure p {
+        font-size: 14px;
+    }
+
+    .Contact article figure form input[type=email] {
+        padding: 0px 45px 0px 10px;
+    }
+
+    .Contact article figure form input::placeholder {
+        font-size: 15px;
+    }
+
+    .Contact article figure form input[type=submit] {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+    footer article > nav .logo a h1 {
+        font-size: 25px;
+    }
+    footer article > nav .ul_item ul li a {
+        font-size: 16px;
+    }
+
+    footer article figure .figure_left p {
+        font-size: 13px;
+    }
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 320px) { 
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 285px !important;
+    }
+
+    nav .navbar-brand h1 {
+        font-size: 23px;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px !important;
+        height: 25px !important;
+    }
+
+    nav .navbar-toggler {
+        padding: 2px 8px;
+    }
+    
+    nav button {
+        line-height: 100%;
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    nav .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+
+    nav .navbar-nav .nav-item .nav-link:hover {
+        font-size: 18px;
+    }
+
+    .Home article .right_article header h1 {
+        font-size: 37px;
+        line-height: 45px;
+    }
+
+    .Home article .right_article header h2 {
+        font-size: 37px;
+        line-height: 45px;
+        padding-left: 5%;
+    }
+
+    .Home article .right_article header img:nth-child(4) {
+        left: 75%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .Home article .right_article header img:nth-child(3) {
+        left: 9%;
+        height: 80px;
+    }
+
+    .Home article .right_article figure p {
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .Home article .right_article figure button {
+        padding: 0px 13px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .Home article .left_article figure .banner_img img {
+        width: 220px;
+        height: 320px;
+    }
+
+    .Home article .right_article figure {
+        margin-bottom: 30%;
+    }
+
+    .Home article .left_article figure .icon i {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .Home article .left_article figure .icon i:nth-child(4) {
+        font-size: 11px;
+    }
+
+    .Home article .left_article figure .icon img:nth-child(5) {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Home article .left_article figure .icon img:nth-child(6) {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Home .social_media {
+        top: 30%;
+        z-index: 2;
+    }
+
+    .Home .social_media ul {
+        width: 20px;
+        height: 120px;
+    }
+
+    .Home .social_media ul li a i {
+        font-size: 10px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .Home .social_media > p {
+        font-size: 10px;
+        line-height: 100%;
+        padding: 10px 3px;
+    }
+
+    .Home article .left_article figure .icon img:nth-child(9) {
+        right: -12%;
+        width: 50px;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon h1 {
+        font-size: 20px;
+        line-height: 100%;
+        margin-top: 5px;
+    }
+
+    .Home .dashboard .dashboard_item .dashboard_icon h2 {
+        font-size: 17px;
+        line-height: 100%;
+        margin-top: 10px;
+    }
+
+    .Home .dashboard {
+        height: 25%;
+    }
+
+    .Home article {
+        padding: 0 0 50%;
+    }
+
+    .Service {
+        padding: 40% 0 5%;
+    }
+
+    .Service .left_article header h1 {
+        font-size: 35px;
+        line-height: 100%;
+    }
+
+    .Service .left_article figure p {
+        font-size: 10px;
+    }
+
+    .Service .left_article figure p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .Service .left_article figure button {
+        padding: 8px 10px;
+        font-size: 13px;
+        line-height: 100%;
+    }
+
+    .Service .right_article .area {
+        flex-direction: column;
+    }
+
+    .Service .right_article .area .web figure {
+        padding: 15px 0px;
+    }
+
+    .Service .left_article figure {
+        margin-bottom: 40px;
+    }
+    .Service .right_article .area .web figure h2 {
+        font-size: 17px;
+        margin-top: 0%;
+    }
+
+    .Service .right_article .area .web figure h2 {
+        font-size: 17px;
+        margin-top: 0%;
+    }
+
+    .Service2 header h1 {
+        font-size: 35px;
+    }
+
+    .Service2 header h1 {
+        font-size: 35px;
+        line-height: 43px;
+        margin-top: 20px;
+    }
+
+    .Service2 header P {
+        font-size: 10px;
+        padding: 0;
+        line-height: 22px;
+    }
+
+    .Service2 figure .figure_left .experience {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .custom_padding .col-xxl-6:nth-child(1){
+        padding-right: 25px !important; 
+    }
+
+    .custom_padding .col-xxl-6:nth-child(2){
+        padding-left: 25px !important;
+    }
+
+    .Service2 figure .figure_left .experience::after {
+        right: -25px;
+    }
+
+    .Service2 figure .figure_left .experience h2 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .Service2 figure .figure_right .experience p {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .Service2 > img {
+        top: -5%;
+    }
+
+    .Service2 > img:nth-child(2) {
+        top: -5.2%;
+    }
+
+    .About .left_figure header h1 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .About > img {
+        top: -0%;
+        right: 0;
+        left: inherit;
+        transform: translate(-10%, 0%) rotate(90deg);
+        transform-origin: 0% 0%;
+    }
+
+    .About > img:nth-child(2) {
+        top: 5px;
+        right: 0;
+        left: inherit;
+    }
+
+    .About .left_figure figure p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .About .left_figure figure button {
+        padding: 8px 15px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .About .left_figure {
+        margin-bottom: 25%;
+    }
+
+    .About .left_figure header img {
+        width: 40px;
+        top: 45%;
+    }
+    .About .right_figure figure > img {
+        width: 230px;
+        height: 320px;
+    }
+
+    .About .right_figure figure .icon img:nth-child(1) {
+        width: 70px;
+        height: 70px;
+        right: 67%;
+    }
+
+    .About .right_figure figure .icon img:nth-child(2) {
+        height: 90px;
+        width: 90px;
+        right: 0%;
+    }
+
+    .Portfolio > img {
+        top: 0;
+        right: 0;
+        left: inherit;
+        transform: translate(0%, 10%) rotate(90deg);
+        transform-origin: 0% 0%;
+    }
+
+    .Portfolio > img:nth-child(2) {
+        top: 3px;
+        right: 0;
+        left: inherit;
+    }
+
+    .About {
+        padding: 9% 0 14%;
+    }
+
+    .Portfolio header .title img {
+        left: 8%;
+        width: 40px;
+        top: 0px;
+    }
+
+    .Portfolio header .title p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .Portfolio header .githubLink {
+        font-size: 14px;
+    }
+
+    .Portfolio header .githubLink i {
+        padding-left: 10px;
+    }
+
+    .Portfolio header .title h1 {
+        font-size: 36px;
+        line-height: 45px;
+        margin-top: 25px;
+    }
+
+    .Portfolio figure .firgure_up .overlay .item figure h2 {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    .Portfolio figure .firgure_up .overlay .item figure button {
+        padding: 9px 10px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .Blog header h1 {
+        font-size: 38px;
+    }
+
+    .Blog > img {
+        top: 0%;
+        right: 0%;
+        left: inherit;
+        transform: translate(-10%, 0%) rotate(90deg);
+        transform-origin: 0% 0%;
+    }
+
+    .Blog > img:nth-child(2) {
+        top: 3px;
+        right: 0%;
+    }
+
+    .Blog header p {
+        line-height: 25px;
+        font-size: 13px;
+    }
+
+    .Blog figure {
+        width: 80%;
+    }
+
+    .Blog figure {
+        width: 80%;
+    }
+
+    .Blog figure .figure_title h2 {
+        margin-top: 12px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .Blog figure .figure_title > p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .Blog figure .figure_title .read_link a {
+        font-size: 13px;
+    }
+
+    .Blog figure .figure_title .read_link {
+        font-size: 14px;
+    }
+
+    .Blog .down_wave button {
+        padding: 9px 18px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .Blog .down_wave {
+        padding: 0 0 10%;
+    }
+
+    .Contact article figure h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .Contact article figure form {
+        flex-direction: column;
+    }
+
+    .Contact article figure form input[type=email] {
+        padding: 0px 0px 0px 10px;
+        height: 36px;
+        margin-bottom: 15px;
+    }
+
+
+    .Contact article figure form input[type=submit] {
+        padding: 5px 16px;
+        font-size: 13px;
+        height: 40px;
+    }
+
+    .Contact article figure p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .Contact article figure h1 {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+    .Contact > img {
+        top: inherit;
+        right: inherit;
+        bottom: inherit;
+        top: 0;
+        left: 0;
+        transform: translate(-10%, 0%) rotate(-90deg);
+        transform-origin: 0% 0%;
+    }
+
+    .Contact > img:nth-child(2) {
+        top: 3px;
+        left: 0;
+    }
+
+    footer nav .logo a h1 span > img {
+        width: 40px;
+    }
+
+    footer {
+        padding: 40px 0 0;
+    }
+
+    footer article > nav .logo a h1 {
+        font-size: 22px;
+    }
+
+    footer article > nav .ul_item ul {
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer article > nav .logo a h1 {
+        font-size: 20px;
+        line-height: 100%;
+        margin-bottom: 12px;
+    }
+
+    footer article > nav .ul_item ul li {
+        padding-left: 0px;
+    }
+
+    footer article > nav .ul_item ul li a {
+        font-size: 14px;
+    }
+
+    footer article > nav .ul_item ul li a:hover {
+        font-size: 15px;
+    }
+
+    footer article > nav .ul_item ul li a::before {
+        font-size: inherit;
+    }
+
+    footer article figure .figure_left p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    footer article figure .figure_right ul li a i {
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+    }
+
+    footer article figure .figure_right ul li {
+        padding: 0 10px;
+    }
+
+    footer article figure .copywright p {
+        font-size: 8px;
+        padding: 0% 0 0%;
+    }
+}
+
 /* No media query for `xs` since this is the default in Bootstrap */
 
 
