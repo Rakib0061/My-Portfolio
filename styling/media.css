@@ -1603,11 +1603,9 @@
     }
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 320px) { 
-
+@media (max-width: 450px) { 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 275px !important;
+        max-width: 370px !important;
     }
 
     nav .navbar-brand h1 {
@@ -2127,6 +2125,14 @@
     footer article figure .copywright p {
         font-size: 8px;
         padding: 0% 0 0%;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 320px) { 
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 275px !important;
     }
 }
 
